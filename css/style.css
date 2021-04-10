@@ -1,0 +1,291 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+
+.container{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+/*---cabecalho------------------*/
+header{
+	background: #DCDCDC;
+	position: fixed;
+	width: 100%;
+	padding: 2em;
+	opacity: 0.7;
+}
+
+#logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	width: 100%;
+}
+
+nav{
+	text-align: center;
+	width: 100%;
+	margin-top: 0.7em;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0.7em;
+	margin-top: 0.5em;
+	font-weight: 700;
+	color: #000;
+}
+
+nav a:hover{
+	border-bottom: 1px solid;
+}
+
+#fundo{
+	height: 15em;
+}
+
+/*---conteudos-----------------*/
+
+#fotos{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 0.25em;
+}
+
+.coluna{
+	flex: 25%;
+	display: flex;
+	flex-direction: column;
+	max-width: 25%;
+	padding: 0 0.25em;
+}
+
+.coluna img{
+	margin-top: 0.5em;
+	width: 100%;
+}
+
+.coluna img:last-child{
+	flex-grow: 1;
+}
+
+/*---rodapé-------------------*/
+
+footer{
+	background: #DCDCDC;
+	padding: 2em;
+	margin-top: 0.5em;
+	text-align: center;
+}	
+
+/*-------------------Pagina sobre-------------------*/
+
+#sobre{
+	line-height: 1.5em;
+	font-size: 1.3em;
+	text-align: center;
+	background: #f1f1f1;
+	min-height: 365px;
+	padding: 0.5em 0;
+}
+
+#sobre h2{
+	margin: 0;
+}
+
+#sobre a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+	font-weight: 700;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding: 0.3em;
+	margin: 0.3em 0 1em 0;
+}
+
+#sobre a:hover{
+	color: #ddd;
+}
+
+/*-------------------Pagina Contato-------------------*/
+
+
+/*-----------Contatos-----------*/
+#contato{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	background: white;
+	padding: 0.5em 0;
+	overflow-x: hidden
+}
+
+#contatos{
+	width: 30%;
+}
+
+.contact-box{
+	min-height: 5em;
+	width: 95%;
+	margin: 0.5em 0.5em 1em 0.5em;
+	padding: 0.5em 0.5em 0.5em 6em;
+  	box-shadow: 3px 3px 3px 3px rgba(68, 68, 68, 0.1);
+}
+
+#whatsapp{
+	background: #F5F5F5 url(../img/wpp.png) no-repeat left 0.5em center;
+}
+
+#email{
+	background: #F5F5F5 url(../img/mail.png) no-repeat left 0.5em center;
+}
+
+#mapa{
+	background: #F5F5F5 url(../img/map.png) no-repeat left 0.5em center;
+}
+
+#proposta{
+	margin-top: 0.5em;
+	width: 70%;
+  	box-shadow: 5px 5px 5px 5px  rgba(68, 68, 68, 0.1);
+  	margin-bottom: 2em;
+}
+
+/*-----------Formulario Orçamento-----------*/
+
+form{
+	padding: 1em 0.5em;
+}
+
+#proposta input{
+	width: 49%;
+	line-height: 3em;
+	margin: 1em 0;
+}
+
+#proposta textarea{
+	width: 98%;
+	line-height: 3em;
+	margin: 1em 0;
+}
+
+#proposta input[type="submit"]{
+	width: 30%;
+	margin:0 61%;
+}
+
+/*-----------Responsividade-----------*/
+
+@media (max-width: 800px){
+	.coluna{
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 600px){
+	.coluna{
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 433px){
+	#fundo {
+		height: 18em;
+	}
+}
+
+@media (max-width: 283px){
+	#fundo {
+		height: 21em;
+	}
+}
+
+@media only screen and (max-width: 600px){
+
+	#contatos, #proposta{
+		width: 100%; 
+	}
+
+	#proposta{
+		text-align: center;
+	}
+
+	#proposta input, #proposta textarea{
+		width: 90%;
+		line-height: 3em;
+		margin: 1em 0.5em;
+	}
+
+	#proposta input[type="submit"]{
+	width: 30%;
+	margin:0 65%;
+	}
+
+	.contact-box{
+		min-height: 5em;
+		width: 95%;
+		margin: 1.5em 0.2em 1em 0.3em;
+		padding: 0.5em ;
+		text-align: center;
+}
+
+	#whatsapp{
+		background: #F5F5F5;
+	}
+
+	#email{
+		background: #F5F5F5;
+	}
+
+	#mapa{
+		background: #F5F5F5;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+ 	#contatos, #proposta{
+		width: 80%;
+	}
+
+	#proposta input, #proposta textarea{
+		width: 90%;
+		line-height: 3em;
+		margin: 1em 0.5em;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+ 	#contatos, #proposta{
+		width: 60%;
+} 
+
+@media only screen and (min-width: 1200px) {
+  	#contatos{
+		width: 30%;
+	}
+
+	#proposta{
+		width: 70%
+	}
+}
