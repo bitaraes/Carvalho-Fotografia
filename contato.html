@@ -50,17 +50,13 @@
 				<form>
 					<h2>Solicite um Orçamento</h2>
 					<p>Preencha os campos abaixo para receber uma proposta.</p>
-					<input type="text" name="Nome" placeholder="Nome Completo" title="Seu Nome Completo">
-					<input type="text" name="Email" placeholder="Email">
-					<input type="text" name="Telefone" placeholder="Telefone">
-					<input type="text" name="Cep" placeholder="CEP" onblur="buscaCep(this.value)">
-					<input type="text" name="Rua" placeholder="Rua">
-					<input type="text" name="Bairro" placeholder="Bairro">
-					<input type="text" name="Cidade" placeholder="Cidade">
-					<input type="text" name="Estado" placeholder="Estado">
-					<input type="text" name="Data" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Data do Evento">
-					<textarea rows="5" name="Mensagem" placeholder="Mensagem"></textarea>
-					<input type="submit" name="Enviar" value="Enviar">
+					<input type="text" name="nome" placeholder="Nome Completo">
+					<input type="email" name="email" placeholder="Email">
+					<input type="text" name="telefone" placeholder="Telefone">
+					<input type="text" name="local" placeholder="Local">
+					<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Data do Evento">
+					<textarea rows="5" name="mensagem" placeholder="Mensagem"></textarea>
+					<input type="submit" name="enviar" value="Enviar">
 				</form>
 				
 			</section><!--fim formulario de proposta-->
@@ -71,6 +67,6 @@
 				Todos os direitos reservados
 			</div>
 		</footer><!-- fim conteudos -->
-		<script type="text/javascript" src="index.js"></script>
+		
 	</body>
 </html>
