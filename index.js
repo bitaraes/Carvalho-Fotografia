@@ -81,7 +81,7 @@ document.querySelector("input[name=Enviar]")
 )
 //Buscar cep
 function buscaCep(cepDigitado){
-	var cep = cepDigitado
+	var cep = cepDigitado.replace(/\D/g, "");
 
 	if (cep != "") {
 		var valida = /^[0-9]{8}$/;//expressão regular cep br
