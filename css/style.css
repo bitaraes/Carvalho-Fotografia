@@ -49,6 +49,7 @@ nav a {
 	margin-top: 0.5em;
 	font-weight: 700;
 	color: #000;
+	border-bottom: 1px solid #DCDCDC;
 }
 
 nav a:hover {
@@ -92,7 +93,7 @@ nav a:hover {
 	opacity: 1;
 	border: 2px solid #000;
 	transform: scale(1.1);
-	transition: 1s;
+	transition: border 0s, transform 0.8s, opacity 1s;
 	z-index: 1;
 }
 
@@ -114,6 +115,7 @@ footer {
 	background: #f1f1f1;
 	min-height: 365px;
 	padding: 0.5em 0;
+	margin-top: 0.5em;
 }
 
 #sobre h2 {
@@ -146,6 +148,7 @@ footer {
 	width: 100%;
 	background: white;
 	padding: 0.5em 0;
+	margin-top: 0.5em;
 	overflow-x: hidden
 }
 
