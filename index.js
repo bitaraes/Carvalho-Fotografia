@@ -38,7 +38,7 @@ function listarFotos() {
         const idColuna = colunas.indexOf(colunaAtual)
         document.getElementById("fotos").innerHTML += `<section class="coluna" id="coluna-${idColuna}"></section>`
         colunaAtual.map((fotoAtual) => {
-            document.getElementById(`coluna-${idColuna}`).innerHTML += `<img src="${fotoAtual}">`
+            document.getElementById(`coluna-${idColuna}`).innerHTML += `<img class="fotos-expo" src="${fotoAtual}">`
         })
     })
 }
